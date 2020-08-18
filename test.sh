@@ -1,2 +1,2 @@
 echo "Test: This file is run from git";
-echo "made changed";
+echo "made changes";
