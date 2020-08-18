@@ -1,1 +1,1 @@
-echo "Junit test successfull";
+echo "Junit test successful";
