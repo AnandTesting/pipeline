@@ -1,28 +1,32 @@
 pipeline{
   agent any
   stages{
+    
+    environment{
+      VERSION=1.2.3
+    }
             stage("dev_build"){
               steps{
-                echo "Dev - Building project"
+                echo "Dev V${1.2.3} - Building project"
               }
             }
 
             stage("dev_integrate"){
               steps{
-                echo "Dev - Integrating..."
+                echo "Dev V${1.2.3} - Integrating... ${1.2.3}"
               }
             }
 
             stage("dev_deploy"){
               steps{
-                echo "Dev - Deploying..."
+                echo "Dev V${1.2.3} - Deploying..."
               }
             }
 
   }
   post{
       always{
-        echo "Dev - Run always"
+        echo "Dev V${1.2.3} - Run always"
       }
     }
 }
