@@ -7,26 +7,26 @@ pipeline{
     }
             stage("dev_build"){
               steps{
-                echo "Dev V${1.2.3} - Building project"
+                echo "Dev V${VERSION} - Building project"
               }
             }
 
             stage("dev_integrate"){
               steps{
-                echo "Dev V${1.2.3} - Integrating... ${1.2.3}"
+                echo "Dev V${VERSION} - Integrating... ${1.2.3}"
               }
             }
 
             stage("dev_deploy"){
               steps{
-                echo "Dev V${1.2.3} - Deploying..."
+                echo "Dev V${VERSION} - Deploying..."
               }
             }
 
   }
   post{
       always{
-        echo "Dev V${1.2.3} - Run always"
+        echo "Dev V${VERSION} - Run always"
       }
     }
 }
