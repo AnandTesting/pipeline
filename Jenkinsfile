@@ -13,7 +13,7 @@ pipeline{
 
             stage("dev_integrate"){
               steps{
-                echo "Dev V${VERSION} - Integrating... ${1.2.3}"
+                echo "Dev V${VERSION} - Integrating..."
               }
             }
 
