@@ -6,7 +6,7 @@ pipeline{
         echo "Building project"
       }
     }
-    stage("integrating"){
+    stage("integrate"){
       steps{
         echo "Integrating..."
       }
@@ -20,12 +20,16 @@ pipeline{
   stage("test"){
     parallel{
                 stage("unit test"){
-                  echo "Unit Testing"
-                  sh "sleep 20"
+                  steps{
+                    echo "Unit Testing"
+                    sh "sleep 20"
+                  }
                 }
                 stege("integration test"){
-                  echo "Integration Testing"
-                  sh "sleep 15"
+                  steps{
+                    echo "Integration Testing"
+                    sh "sleep 15"
+                  }
                 }
     }
   }
