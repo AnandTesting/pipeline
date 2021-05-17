@@ -24,14 +24,14 @@ pipeline{
                           stage("unit test"){
                             steps{
                               echo "Unit Testing"
-                              
+                              sleep 20
                             }
                           }
 
                           stage("integration test"){
                             steps{
                               echo "Integration Testing"
-                              
+                              sleep 15
                             }
                           }
               }
