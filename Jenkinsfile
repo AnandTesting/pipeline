@@ -16,11 +16,10 @@ pipeline{
         echo "Deploying..."
       }
     }
-    post{
+  }
+  post{
       always{
         echo "Run always"
       }
     }
-  
-  }
 }
