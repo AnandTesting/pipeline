@@ -3,26 +3,26 @@ pipeline{
   stages{
             stage("dev_build"){
               steps{
-                echo "Building project"
+                echo "Dev - Building project"
               }
             }
 
             stage("dev_integrate"){
               steps{
-                echo "Integrating..."
+                echo "Dev - Integrating..."
               }
             }
 
             stage("dev_deploy"){
               steps{
-                echo "Deploying..."
+                echo "Dev - Deploying..."
               }
             }
 
   }
   post{
       always{
-        echo "dev - Run always"
+        echo "Dev - Run always"
       }
     }
 }
