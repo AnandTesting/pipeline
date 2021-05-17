@@ -1,10 +1,11 @@
 pipeline{
   agent any
-  stages{
-    
-    environment{
+  
+  environment{
       VERSION="1.2.3"
     }
+  
+  stages{ 
             stage("dev_build"){
               steps{
                 echo "Dev V${VERSION} - Building project"
