@@ -3,7 +3,7 @@ pipeline{
   stages{
     
     environment{
-      VERSION=1.2.3
+      VERSION="1.2.3"
     }
             stage("dev_build"){
               steps{
