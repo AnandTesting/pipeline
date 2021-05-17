@@ -15,7 +15,6 @@ pipeline{
 
             stage("deploy"){
               steps{
-                #input("Do you want to continue?")
                 echo "Deploying..."
               }
             }
