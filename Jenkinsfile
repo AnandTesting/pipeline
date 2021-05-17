@@ -28,7 +28,7 @@ pipeline{
                             }
                           }
 
-                          stege("integration test"){
+                          stage("integration test"){
                             steps{
                               echo "Integration Testing"
                               sh "sleep 15"
