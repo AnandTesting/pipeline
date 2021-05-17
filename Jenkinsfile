@@ -24,14 +24,20 @@ pipeline{
                           stage("unit test"){
                             steps{
                               echo "Unit Testing"
-                              sleep 20
+                              for i in range{1..50}; do
+                                echo "unit testing"
+                                sleep 1
+                              done
                             }
                           }
 
                           stage("integration test"){
                             steps{
                               echo "Integration Testing"
-                              sleep 15
+                              for i in range{50..100}; do
+                                echo "integrate testing"
+                                sleep 2
+                              done
                             }
                           }
               }
