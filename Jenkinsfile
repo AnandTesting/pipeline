@@ -6,15 +6,27 @@ pipeline{
         echo "Building project"
       }
     }
-    stage("test"){
+    stage("integrating"){
       steps{
-        echo "Testing..."
+        echo "Integrating..."
       }
     }
     stage("deploy"){
       steps{
         echo "Deploying..."
       }
+    }
+  }
+  stage("test"){
+    parallel{
+                stage("unit test"){
+                  echo "Unit Testing"
+                  sh "sleep 20"
+                }
+                stege("integration test"){
+                  echo "Integration Testing"
+                  sh "sleep 15"
+                }
     }
   }
   post{
