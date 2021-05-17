@@ -25,7 +25,6 @@ pipeline{
                             steps{
                               echo "Unit Testing"
                               sleep 1
-                              done 
                             }
                           }
 
