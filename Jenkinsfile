@@ -30,9 +30,9 @@ pipeline{
               steps{
                   script{
                       gv.deployApp()
-                  }
-              }
+                }
             }
+    }
   }
   post{
       always{
